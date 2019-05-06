@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Navbar from './EnnoAppBar';
 import FoodCard from "./FoodCard";
+import SimpleMap from './SimpleMap';
 
 
 class App extends Component {
@@ -30,6 +31,7 @@ class App extends Component {
     return (
       <div>
         <Navbar/>
+        <SimpleMap/>
         <br/>
         {this.state.foods.map((data) => {
           return(
